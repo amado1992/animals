@@ -1,0 +1,146 @@
+// // Variables
+// @import 'variables';
+
+// // Bootstrap
+// @import '~bootstrap/scss/bootstrap';
+
+//
+
+body {
+    font-size: .675rem;
+}
+
+.bg-gradient-primary {
+	background-color: #6c9c4d;
+    background-image: linear-gradient(120deg,#6c9c4d 10%,#4f6942 100%);
+}
+
+.bg-primary {
+    background-color: #6c9c4d !important;
+}
+
+
+.btn-primary {
+    background-color: #6c9c4d;
+    border-color: #6c9c4d;
+}
+
+.btn-grey {
+    background-color: #c1c1c1;
+    border-color: #c1c1c1;
+    color: #000;
+}
+
+
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:focus {
+    background-color: #4f6942;
+    border-color: #4f6942;
+}
+
+.btn-primary.disabled,
+.btn-primary:disabled {
+    background-color: #4f6942;
+    border-color: #4f6942;
+}
+
+.badge-primary {
+    background-color: #4f6942;
+}
+
+.border-primary {
+    border-color: #4f6942 !important;
+}
+
+a {
+    color: #4f6942;
+}
+
+a:hover,
+a:active,
+a:focus {
+    color: #6c9c4d;
+}
+
+.text-primary {
+	color: #4f6942 !important;
+}
+
+a.nav-link {
+	color: #4a5568;
+}
+
+a.nav-link:hover,
+a.nav-link:active,
+a.nav-link:focus {
+    color: #6c9c4d;
+}
+
+.btn-link {
+	color: #4a5568;
+}
+
+.btn-link:hover,
+.btn-link:active,
+.btn-link:focus {
+	color: #6c9c4d;
+}
+
+.page-link {
+    color: #4f6942;
+}
+
+.page-item.active .page-link {
+    background-color: #4f6942;
+    border-color: #4f6942;
+}
+
+
+.topbar .dropdown-list .dropdown-header {
+	background-color: #4f6942;
+	border: 1px solid #4f6942;
+}
+
+.sidebar {
+    position: relative;
+}
+.sidebar .nav-item .collapse .collapse-inner .collapse-item.active,
+.sidebar .nav-item .collapsing .collapse-inner .collapse-item.active {
+    color: #1a202c;
+}
+
+
+.avatar {
+	background-color: #6c9c4d;
+}
+
+
+.table-responsive {
+    overflow-x: hidden;
+}
+
+
+dl.dl-horizontal {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-auto-columns: 1fr;
+    grid-auto-flow: column;
+}
+
+.border-width-3 {
+    border-width: 3px !important;
+}
+
+.border-width-5 {
+    border-width: 5px !important;
+}
+
+
+.form-control-sm {
+    height: calc(1.5em + .5rem + 2px) !important;
+}
+
+table.clickable tbody tr td:not(.no-click) {
+    cursor: pointer;
+}

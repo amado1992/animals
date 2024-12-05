@@ -1,0 +1,169 @@
+# This is the configuration file that can be
+# used with GPDR-dump (https://github.com/Smile-SA/gdpr-dump)
+# in order to be able to create an anonimized version of the
+# database to be able to share with developers.
+
+database:
+  host: 'localhost'
+  user: 'izs' # Change to your local install
+  password: 'as98d98auwer89wqy' # Change to your local install
+  name: 'crm_zoo_20240207' # Change to your local install
+dump:
+  output: 'izs_anonimized_db_{Y-m-d-H-i-s}.sql.gz'
+  compress: gzip
+tables_blacklist:
+  - 'bank_accounts'
+  - 'emails'
+tables:
+  contacts:
+    # limit: 500
+    converters:
+      first_name:
+        converter: 'faker'
+        parameters:
+          formatter: 'firstName'
+      last_name:
+        converter: 'faker'
+        parameters:
+          formatter: 'lastName'
+      email:
+        converter: 'randomEmail'
+      domain_name:
+        converter: 'faker'
+        parameters:
+          formatter: 'domainName'
+      city:
+        converter: 'faker'
+        parameters:
+          formatter: 'city'
+      mobile_phone:
+        converter: 'faker'
+        parameters:
+          formatter: 'phoneNumber'
+  invoices:
+    converters:
+      invoice_amount:
+        converter: 'randomizeNumber'
+      paid_value:
+        converter: 'randomizeNumber'
+  offers_additional_costs:
+    converters:
+      costPrice:
+        converter: 'randomizeNumber'
+      salePrice:
+        converter: 'randomizeNumber'
+  offers_airfreight_pallets:
+    converters:
+      pallet_cost_value:
+        converter: 'randomizeNumber'
+      pallet_sale_value:
+        converter: 'randomizeNumber'
+  offer_species:
+    converters:
+      offerCostPriceF:
+        converter: 'randomizeNumber'
+      offerCostPriceM:
+        converter: 'randomizeNumber'
+      offerCostPriceU:
+        converter: 'randomizeNumber'
+      offerCostPriceP:
+        converter: 'randomizeNumber'
+  offer_species_airfreights:
+    converters:
+      cost_volKg:
+        converter: 'randomizeNumber'
+      sale_volKg:
+        converter: 'randomizeNumber'
+  organisations:
+    converters:
+      name:
+        converter: 'faker'
+        parameters:
+          formatter: 'company'
+      domain_name:
+        converter: 'faker'
+        parameters:
+          formatter: 'domainName'
+      email:
+        converter: 'randomEmail'
+      phone:
+        converter: 'faker'
+        parameters:
+          formatter: 'phoneNumber'
+      fax:
+        converter: 'faker'
+        parameters:
+          formatter: 'phoneNumber'
+      website:
+        converter: 'faker'
+        parameters:
+          formatter: 'url'
+      facebook_page:
+        converter: 'faker'
+        parameters:
+          formatter: 'url'
+      address:
+        converter: 'faker'
+        parameters:
+          formatter: 'streetAddress'
+      zipcode:
+        converter: 'faker'
+        parameters:
+          formatter: 'postcode'
+      city:
+        converter: 'faker'
+        parameters:
+          formatter: 'city'
+      vat_number:
+        converter: 'randomText'
+      short_description:
+        converter: 'faker'
+        parameters:
+          formatter: 'catchPhrase'
+      canonical_name:
+        converter: 'faker'
+        parameters:
+          formatter: 'company'
+  surplus:
+    converters:
+      costPriceM:
+        converter: 'randomizeNumber'
+      costPriceF:
+        converter: 'randomizeNumber'
+      costPriceU:
+        converter: 'randomizeNumber'
+      costPriceP:
+        converter: 'randomizeNumber'
+      salePriceM:
+        converter: 'randomizeNumber'
+      salePriceF:
+        converter: 'randomizeNumber'
+      salePriceU:
+        converter: 'randomizeNumber'
+      salePriceP:
+        converter: 'randomizeNumber'
+  zoo_associations:
+    converters:
+      website:
+        converter: 'faker'
+        parameters:
+          formatter: 'url'
+  users:
+    converters:
+      name:
+        converter: 'faker'
+        parameters:
+          formatter: 'firstName'
+      last_name:
+        converter: 'faker'
+        parameters:
+          formatter: 'lastName'
+      email:
+        converter: 'randomEmail'
+      password:
+        converter: 'hash'
+        parameters:
+          algorithm: 'sha256'
+
+
+

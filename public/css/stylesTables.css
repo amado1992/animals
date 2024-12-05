@@ -1,0 +1,361 @@
+:root {
+    --main-green: #6C9C4D;
+    --main-light-green: #E5F6DA;
+    --main-blue: #2D3748;
+    --main-light-gray: #efefef;
+    --main-dark-gray: #707070;
+    --main-titles: #848484;
+    --main-text: #616161;
+}
+
+
+#animalsTab .table td, #animalsTab .table th {
+    padding:0;
+    vertical-align: top;
+    border: none;
+
+}
+
+#animalsTab .blue{
+    background-color: var(--main-blue);
+    color: white;
+}
+#animalsTab .inline{
+    display: inline;
+}
+#animalsTab .blueborder{
+    border-bottom: 1px solid #d6d9e2;;
+}
+
+#animalsTab .species{
+
+    font-size: 0.63rem;
+    font-weight:400;
+    color: var(--main-titles);
+}
+#animalsTab .name{
+    font-size: 12px !important;
+    color: var(--main-text);
+    margin-top: -5px;
+    font-weight: 500;
+}
+
+#animalsTab .bordered{
+    width: 100%;
+    line-height: 20px;
+    height: 23px;
+    text-align: center;
+    border: 1px solid var(--main-text);
+
+}
+
+#animalsTab .bordered2{
+    width: 65px;
+}
+#animalsTab .cost{
+    font-weight: lighter
+}
+#animalsTab .gap{
+    gap: 4px;
+}
+#animalsTab .gap2{
+    gap: 6px;
+
+}
+#animalsTab .green{
+    background-color: var(--main-green);
+}
+#animalsTab .greengray{
+    background-color: var(--main-light-green);
+}
+#animalsTab .current{
+    border: 2px solid var(--main-text);
+}
+#animalsTab .gray{
+    background-color: var(--main-light-gray);
+    height: 100%;
+}
+#animalsTab tr > .none{
+    padding: 3px 0 3px 10px;
+
+}
+#animalsTab .up{
+    margin-top: -35%;
+}
+#animalsTab .header{
+    color: white;
+    text-align: left;
+    font-size:x-large;
+}
+
+#animalsTab th .header{
+    padding: 0.2rem 0 0.2rem 1.4rem;
+}
+
+#animalsTab th > span{
+    font-weight:600;
+}
+#animalsTab .check{
+    width: 20px;
+    height: 23px;
+}
+#animalsTab  .colFlex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 0.9rem;
+}
+
+#animalsTab .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -15px;
+    margin-right: 10px;
+}
+
+#animalsTab .block{
+    display: block;
+}
+#animalsTab .size{
+    font-size: 0.8rem;
+}
+#animalsTab .align{
+    text-align: center;
+}
+#animalsTab .padding{
+    padding-bottom: 0.5rem;
+}
+#animalsTab .thin{
+    font-weight: 200;
+}
+#animalsTab .white{
+    color: white;
+    font-size: 0.9rem
+}
+#animalsTab tr > td{
+    color: var(--main-text)
+}
+#animalsTab em{
+    font-size: 0.8rem;
+    margin-left: 0.85rem;
+}
+
+#animalsTab .table thead th{
+    border: 0;
+}
+#animalsTab .middle{
+    margin-top: 1.5rem;
+}
+#animalsTab .end{
+    text-align: end;
+}
+#animalsTab .space{
+    justify-content: space-around;
+}
+
+#animalsTab .self{
+    justify-content: space-between;
+}
+#animalsTab .footer{
+    align-items: center;
+    margin-top: 2px;
+}
+#animalsTab textarea{
+
+    overflow: hidden;
+    resize: none;
+    width: 80%;
+    padding-left: 0.25rem;
+    font-size: 0.8rem;
+
+    line-height: 30px;
+    background-color: white;
+    border: 1px solid var(--main-dark-gray);
+    border-radius: 0.3rem;
+
+}
+
+
+#animalsTab select{
+    width: 100%;
+    border-radius: 0.5em;
+    border-color: var(--main-dark-gray);
+    /* color: gray; */
+    font-size: 0.75rem;
+
+    padding: 3px;
+}
+
+#animalsTab option{
+    color: black;
+}
+
+#animalsTab .save{
+    margin-left: -3.5rem;
+    font-size: 0.6rem;
+    width: 18%;
+    height: 32px;
+    background-color: var(--main-blue);
+    padding: 0.1rem ;
+    border-radius: 0.3rem
+}
+#animalsTab .delete{
+    margin-left: 5px;
+    font-size: 12px;
+    width: 18%;
+    height: 32px;
+    padding: 5px 0 0 0;
+    border-radius: 0.3rem;
+    margin-top: 8px;
+}
+
+#animalsTab .center{
+    align-items: center;
+}
+#animalsTab .save > i{
+    font-size: medium;
+}
+#animalsTab .area{
+    background-color: white;
+    width: 90px;
+}
+#animalsTab .move{
+    justify-content: end;
+}
+#animalsTab p > i {
+    color: white;
+}
+#animalsTab .space{
+    justify-content: start;
+}
+#animalsTab #dimensions{
+    font-size: small;
+    width: 100%;
+}
+#animalsTab .weight{
+    width: 100%;
+    padding: 1.23rem 0;
+    font-size: 0.7rem;
+    border: 1px solid gray;
+    border-radius: 0.8em;
+}
+
+#animalsTab .weight2{
+    width: 45%;
+    padding: 0.3rem  0.5rem;
+}
+#animalsTab .reduce{
+    font-size: 0.75rem;
+}
+
+#animalsTab .country{
+    overflow-wrap:break-word
+}
+#animalsTab .travel{
+    gap: 4.5rem;
+}
+#animalsTab .fa-rotate-270 {
+    -webkit-transform: rotate(270deg);
+    -moz-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    transform: rotate(270deg);
+}
+
+#animalsTab .fa-rotate-45 {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+@media screen and (max-width: 1120px) {
+
+    #animalsTab .save, #animalsTab .delete{
+        margin-left: -1.5rem;
+        width: 27%;
+    }
+}
+@media screen and (max-width: 875px) {
+
+    #animalsTab .save, #animalsTab .delete {
+        width: 35%;
+    }
+}
+@media screen and (min-width: 1600px) {
+    #animalsTab .bordered2{
+        width: 90px;
+    }
+}
+@media screen and (min-width: 1700px) {
+
+    #animalsTab .save{
+        width: 16%;
+        height: 40px
+
+    }
+    #animalsTab .delete{
+        height: 40px;
+        padding: 9px 0 0 0;
+    }
+
+    #animalsTab textarea {
+        height: 40px;
+        line-height: 40px;
+    }
+}
+
+
+#animalsTab .acordion-link {
+    color: #fff !important;
+    background-color: #6c9c4d !important;
+    padding: 4px 0 0 4px !important;
+}
+
+#animalsTab .acordion-link i{
+    margin: 0 8px 0 0;
+}
+#animalsTab .save-airfreight {
+    color: #fff !important;
+    margin: 0 0 0 17px !important;
+    padding: 0 0px 0 9px !important;
+    width: 35% !important;
+    text-decoration: none !important;
+}
+
+.number-new{
+    color: #24ccff !important;
+}
+
+#animalsTab tr.green{
+    text-align: center !important;
+}
+
+#animalsTab tr.green span{
+    font-size: 15px !important;
+}
+.costform .no_entry{
+    background-color: #e74a3b;
+    color: #fff;
+}
+.costform .estimated{
+    background-color: #e89b40;
+    color: #000;
+}
+.costform .quotation{
+    background-color: #efdb7d;
+    color: #000;
+}
+.costform .real_costs{
+    background-color: #b5d24e;
+    color: #000;
+}
+
+.link-standard-surplus {
+    width: 79%;
+    margin-top: -28px;
+    padding-left: 4px;
+}
